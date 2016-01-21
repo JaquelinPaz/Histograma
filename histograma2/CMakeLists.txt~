@@ -1,0 +1,7 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+PROJECT(histograma)
+
+FIND_PACKAGE(OpenCV REQUIRED)
+
+ADD_EXECUTABLE(histograma histograma.cpp)
+TARGET_LINK_LIBRARIES(histograma ${OpenCV_LIBS})
